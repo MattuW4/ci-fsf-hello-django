@@ -30,7 +30,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-mattuw4-ci-fsf-hello-dja-6huwbdt7yx.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-mattuw4-ci-fsf-hello-dja-6huwbdt7yx.us2.codeanyapp.com',
+                 '8002-mattuw4-ci-fsf-hello-dja-6huwbdt7yx.us2.codeanyapp.com']
 
 
 # Application definition
