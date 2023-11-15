@@ -15,6 +15,7 @@ import os
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
+
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,8 +32,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-mattuw4-ci-fsf-hello-dja-6huwbdt7yx.us2.codeanyapp.com',
-                 '8002-mattuw4-ci-fsf-hello-dja-6huwbdt7yx.us2.codeanyapp.com',
-                 'fsf-hello-django-apple.herokuapp.com']
+                 '8002-mattuw4-ci-fsf-hello-dja-6huwbdt7yx.us2.codeanyapp.com']
 
 
 # Application definition
@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.parse('postgres://xnevkpor:IYiQ42w-guzjxDhq8ndtK01cM1HYSkXy@surus.db.elephantsql.com/xnevkpor')
 }
 
 
